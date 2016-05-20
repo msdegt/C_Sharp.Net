@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SmartHouse
 {
     public class Television : Device, ISetChannel, IChannelSetup, ISetVolume
     { 
-        private int maxChannel; // максимальный номер канала, т.е всего можно смотреть 60 каналов
         private bool chanState; // настроены каналы или нет
         private int currentVolume; // текущая громкость звука
         private int currentChannel; // текущий канал
